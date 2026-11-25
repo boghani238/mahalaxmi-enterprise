@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mahalaxmi Enterprise - Universal TV Remote Control app for compatible TVs using Wi-Fi or infrared technology.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Mahalaxmi Enterprise | Universal TV Remote Control</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--muted:#aab5ca;--text:#f7f9ff;--accent:#7c8cff;--accent2:#4de0c1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 10%,#202d58 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{padding:22px 0;border-bottom:1px solid #ffffff16;position:sticky;top:0;background:#0b1020e8;backdrop-filter:blur(14px);z-index:5}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.2rem;font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent2)}
+    .links{display:flex;gap:24px;color:var(--muted);font-size:.95rem}.links a:hover{color:white}
+    .hero{padding:92px 0 76px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+    .eyebrow{color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.05;letter-spacing:-2px;margin:16px 0 22px}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:610px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:12px;font-weight:750;background:linear-gradient(110deg,var(--accent),#9c79ff);color:white;box-shadow:0 10px 35px #7c8cff35}
+    .btn.secondary{background:#ffffff0c;border:1px solid #ffffff25;box-shadow:none}
+    .visual{min-height:330px;border:1px solid #ffffff20;border-radius:30px;background:linear-gradient(145deg,#1b2850,#11192b);display:grid;place-items:center;position:relative;overflow:hidden}
+    .visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.visual:before{width:240px;height:240px;background:#7c8cff35;top:-80px;right:-60px}.visual:after{width:180px;height:180px;background:#4de0c125;bottom:-70px;left:-50px}
+    .remote{width:150px;height:270px;border-radius:28px;background:linear-gradient(160deg,#303d5b,#101827);border:2px solid #91a4d655;box-shadow:0 25px 65px #0008;padding:18px;transform:rotate(-8deg);position:relative;z-index:1}
+    .screen{height:38px;border-radius:9px;background:#0a1120;border:1px solid #ffffff20;margin-bottom:18px}
+    .dot{width:34px;height:34px;border-radius:50%;background:#7c8cff;margin:0 auto 13px;box-shadow:0 0 20px #7c8cff88}
+    .keys{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.keys i{height:22px;border-radius:7px;background:#7183a455;border:1px solid #ffffff18}
+    section{padding:64px 0}.section-title{text-align:center;font-size:2rem;margin:0 0 12px}.section-sub{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 34px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.feature{padding:25px;border-radius:18px;background:var(--panel);border:1px solid #ffffff12}.feature .icon{font-size:1.6rem}.feature h3{margin:10px 0 6px}.feature p{margin:0;color:var(--muted)}
+    .about{background:#ffffff06;border-top:1px solid #ffffff10;border-bottom:1px solid #ffffff10}.about-card{max-width:780px;margin:auto;text-align:center}.about-card p{color:var(--muted)}
+    footer{padding:28px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}footer a{color:#dce3f6}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 48px;gap:35px}.visual{min-height:290px}.grid{grid-template-columns:1fr}.links{gap:13px;font-size:.85rem}.brand{font-size:1rem}header{padding:16px 0}h1{letter-spacing:-1.3px}}
+    @media(max-width:420px){.links a:nth-child(2){display:none}.actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">MAHALAXMI <span>ENTERPRISE</span></a>
+  <div class="links"><a href="#home">Home</a><a href="#features">Features</a><a href="#about">About</a><a href="privacy-policy.html">Privacy Policy</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Smart control. Simple experience.</div>
+      <h1>Your phone.<br><span style="color:var(--accent2)">Your TV remote.</span></h1>
+      <p class="lead">Meet Universal TV Remote Control by Mahalaxmi Enterprise. Control compatible televisions from your phone using Wi-Fi or infrared technology.</p>
+      <div class="actions">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.mahalaxmi.universaltvremote" target="_blank" rel="noopener">Download on Google Play ↗</a>
+        <a class="btn secondary" href="#features">Explore features</a>
+      </div>
+    </div>
+    <div class="visual" aria-label="Illustration of a smartphone remote control"><div class="remote"><div class="screen"></div><div class="dot"></div><div class="keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+  </div>
+  <section id="features"><div class="wrap">
+    <h2 class="section-title">Features</h2><p class="section-sub">Useful controls designed to make compatible TV operation more convenient.</p>
+    <div class="grid">
+      <article class="feature"><div class="icon">📶</div><h3>Wi-Fi Control</h3><p>Connect to supported televisions through a compatible Wi-Fi network.</p></article>
+      <article class="feature"><div class="icon">📡</div><h3>IR Control</h3><p>Send commands to compatible TVs using your phone’s built-in IR blaster.</p></article>
+      <article class="feature"><div class="icon">🎛️</div><h3>Essential Buttons</h3><p>Access supported power, volume, channel and navigation controls.</p></article>
+      <article class="feature"><div class="icon">📱</div><h3>Convenient Operation</h3><p>Keep supported TV controls accessible from your phone.</p></article>
+    </div>
+  </div></section>
+  <section class="about" id="about"><div class="wrap about-card">
+    <h2 class="section-title">About Mahalaxmi Enterprise</h2>
+    <p>Mahalaxmi Enterprise develops practical mobile app experiences focused on everyday convenience. Our Universal TV Remote Control app brings supported TV controls together in one easy-to-use interface.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.mahalaxmi.universaltvremote" target="_blank" rel="noopener">Get the app</a>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Mahalaxmi Enterprise. All rights reserved.</span><span><a href="privacy-policy.html">Privacy Policy</a> · <a href="https://play.google.com/store/apps/details?id=com.mahalaxmi.universaltvremote" target="_blank" rel="noopener">Google Play</a></span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
